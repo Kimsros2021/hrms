@@ -13,7 +13,7 @@ html, body{
 	font-family: 'Roboto', sans-serif;
     font-size: 100%;
     overflow-x: hidden;
-    background: url(../images/bg.jpg) no-repeat 0px 0px;
+    background: #E2E2E2;
 	background-size:cover;
 }
 body a{
@@ -42,7 +42,7 @@ body a:hover{
     width:240px;
     height:100%;
     position:fixed;
-    background:rgba(52, 48, 48, 0.78);
+    background:#1fa8e0;
     -webkit-transition:all .3s ease-in-out;
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
@@ -202,11 +202,11 @@ ul.sidebar-menu li a.active i {
     transition:all .3s ease-in-out;
 }
 .footer {
-    background: #d19a98;
+    background: white;
     padding: 20px;
 }
 .footer p {
-    color: #fff;
+    color: black;
     letter-spacing: 1px;
 }
 .footer p a {
@@ -219,7 +219,7 @@ ul.sidebar-menu li a.active i {
     left:0;
     right:0;
     z-index:1002;
-    background:rgb(240, 188, 180);
+    background:#d42931;
     -webkit-transition:all .3s ease-in-out;
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
@@ -239,7 +239,7 @@ ul.sidebar-menu li a.active i {
     width:100%;
 }
 .brand {
-    background:#8b5c7e;
+    background:#81d4fa;
     float:left;
     width:240px;
     height:80px;
@@ -247,10 +247,11 @@ ul.sidebar-menu li a.active i {
 }
 a.logo {
     font-size:32px;
-    color:#fff;
+    color:#d42931;
     float:left;
     margin:20px 0 0 25px;
     text-transform:uppercase;
+    font-weight: bold;
 }
 a.logo:hover,a.logo:focus {
     text-decoration:none;
