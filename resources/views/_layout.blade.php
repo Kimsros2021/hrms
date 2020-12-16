@@ -332,6 +332,13 @@
 								</ul>
 							</li>
 							<li class="submenu">
+								<a href="#"><i class="fa fa-user"></i> <span> Recruitment</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="/candidate">Candidate</a></li>
+									<li><a href="/question">Question</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
 								<a href="#" class="noti-dot"><i class="fa fa-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
 								<ul style="display: none;">
 									<li><a href="/employee">Employee</a></li>
@@ -343,6 +350,13 @@
 									<li><a href="/overtime">Overtime</a></li>
 									<li><a href="/warning_and_punishment">Warning && Punishment</a></li>
 									<li><a href="resigned_employee">Resigned Employee</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-user"></i> <span> Shift Promote</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="#">Promote</a></li>
+									<li><a href="#">History</a></li>
 								</ul>
 							</li>
 							<li> 
@@ -436,8 +450,15 @@
 							<li> 
 								<a href=""><i class="fa fa-user-plus"></i> <span>Users</span></a>
 							</li>
-							<li> 
-								<a href=""><i class="fa fa-cog"></i> <span>Settings</span></a>
+							<li class="submenu"> 
+								<a href=""><i class="fa fa-cog"></i> <span>Settings</span><span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Company Setting </a></li>
+									<li><a href=""> Localization </a></li>
+									<li><a href="/role"> Role and Permission </a></li>
+									<li><a href="/change_password"> Change Password </a></li>
+									<li><a href="/leave_type"> Leave Type </a></li>
+								</ul>
 							</li>
 							
 							<li class="submenu">

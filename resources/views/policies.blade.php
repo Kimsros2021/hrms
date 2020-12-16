@@ -2,39 +2,14 @@
 @section('content')
     <!-- Page Content -->
     <div class="content container-fluid">
-		<div class="row">
-			<div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
-				<div class="card dash-widget">
-					<div class="card-body">
-						<span class="dash-widget-icon"><i class="fa fa-male"></i></span>
-						<div class="dash-widget-info">
-							<h3>112</h3>
-							<span>Male</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-sm-6 col-lg-6 col-xl-6">
-				<div class="card dash-widget">
-					<div class="card-body">
-						<span class="dash-widget-icon"><i class="fa fa-female"></i></span>
-						<div class="dash-widget-info">
-							<h3>44</h3>
-							<span>Female</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
+		
 		{{-- employee table --}}
 		<div class="row">
 			<div class="col-sm-12">
 				<div class="card dash-widget">
 					<div class="card-body">
 						<div class="co-md-12 text-right">
-							<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_holiday"><i class="fa fa-plus"></i> Add Employee</a>
+							<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_holiday"><i class="fa fa-plus"></i> Add Policies</a>
 						</div>
 						<div class="table-responsive">
 							<table class="table table-striped">

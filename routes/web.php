@@ -12,7 +12,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// setting
+    Route::get('role',function(){
+        return view('setting.role');
+    });
+    Route::get('change_password',function(){
+        return view('setting.change_password');
+    });
+    Route::get('leave_type',function(){
+        return view('setting.leave_type');
+    });
+// end setting
 Route::get('/', function () {
     return view('login');
 });
@@ -45,4 +55,13 @@ Route::get('warning_and_punishment', function () {
 });
 Route::get('resigned_employee', function () {
     return view('resigned_employee');
+});
+Route::get('profile',function(){
+    return view('profile');
+});
+Route::get('candidate',function(){
+    return view('candidate');
+});
+Route::get('question',function(){
+    return view('question');
 });
