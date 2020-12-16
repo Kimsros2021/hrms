@@ -14,8 +14,35 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
-Route::get('/training',function(){
-    return view('training');
+Route::match(['get', 'post'],'/dashboard',function(){
+    return view('dashboard');
+});
+Route::get('employee',function(){
+    return view('employee');
+});
+Route::get('holiday', function () {
+    return view('holiday');
+});
+Route::get('attendance', function () {
+    return view('attendance');
+});
+Route::get('mission', function () {
+    return view('mission');
+});
+Route::get('department', function () {
+    return view('department');
+});
+Route::get('position', function () {
+    return view('position');
+});
+Route::get('overtime', function () {
+    return view('overtime');
+});
+Route::get('warning_and_punishment', function () {
+    return view('warning_and_punishment');
+});
+Route::get('resigned_employee', function () {
+    return view('resigned_employee');
 });

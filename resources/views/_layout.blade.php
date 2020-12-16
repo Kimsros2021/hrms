@@ -1,258 +1,572 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
-
-<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/30-05-2017/visitors-demo_Free/217035454/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jun 2020 02:37:06 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<html lang="en">
+    
+<!-- Mirrored from dreamguys.co.in/smarthr/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Nov 2020 03:17:32 GMT -->
 <head>
-<title>HR-System</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Visitors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!-- bootstrap-css -->
-<link rel="stylesheet" href="asset/css/bootstrap.min.css" >
-<!-- //bootstrap-css -->
-<!-- Custom CSS -->
-<link href="asset/css/style.css" rel='stylesheet' type='text/css' />
-<link href="asset/css/style-responsive.css" rel="stylesheet"/>
-<!-- font CSS -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<!-- font-awesome icons -->
-<link rel="stylesheet" href="asset/css/font.css" type="text/css"/>
-<link href="asset/css/font-awesome.css" rel="stylesheet"> 
-<link rel="stylesheet" href="asset/css/morris.css" type="text/css"/>
-<!-- calendar -->
-<link rel="stylesheet" href="asset/css/monthly.css">
-<!-- //calendar -->
-<!-- //font-awesome icons -->
-<script src="asset/js/jquery2.0.3.min.js"></script>
-<script src="asset/js/raphael-min.js"></script>
-<script src="asset/js/morris.js"></script>
-</head>
-<body>
-
-
-
-<div id="codefund"><!-- fallback content --></div>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <meta name="description" content="Smarthr - Bootstrap Admin Template">
+		<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+        <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+        <meta name="robots" content="noindex, nofollow">
+        <title>HRMS</title>
+		
+		<!-- Favicon -->
+        <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+		
+		<!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="asset/template/css/bootstrap.min.css">
+		
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+		
+		<!-- Chart CSS -->
+		<link rel="stylesheet" href="asset/template/css/morris.css">
+		
+		<!-- Main CSS -->
+        <link rel="stylesheet" href="asset/template/css/style.css">
+		
+    </head>
 	
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=UA-149859901-1'></script>
+    <body>
+		<!-- Main Wrapper -->
+        <div class="main-wrapper">
+		
+			<!-- Header -->
+            <div class="header">
+			
+				<!-- Logo -->
+                <div class="header-left shadow">
+                    <a href="https://turbotech.com" class="logo">
+						<img src="img/logo.png" width="40" height="40" alt="">
+					</a>
+                </div>
+				<!-- /Logo -->
+				
+				<a id="toggle_btn" href="javascript:void(0);">
+					<span class="bar-icon">
+						<span></span>
+						<span></span>
+						<span></span>
+					</span>
+				</a>
+				
+				<!-- Header Title -->
+                <div class="page-title-box">
+					<h3>TURBOTECH</h3>
+                </div>
+				<!-- /Header Title -->
+				
+				<a id="mobile_btn" class="mobile_btn" href="#sidebar"><i class="fa fa-bars"></i></a>
+				
+				<!-- Header Menu -->
+				<ul class="nav user-menu">
+					<!-- Flag -->
+					{{-- <li class="nav-item dropdown has-arrow flag-nav">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button">
+							<img src="https://dreamguys.co.in/smarthr/blue/assets/img/flags/us.png" alt="" height="20"> <span>English</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/blue/assets/img/flags/us.png" alt="" height="16"> English
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/blue/assets/img/flags/fr.png" alt="" height="16"> French
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/blue/assets/img/flags/es.png" alt="" height="16"> Spanish
+							</a>
+							<a href="javascript:void(0);" class="dropdown-item">
+								<img src="https://dreamguys.co.in/smarthr/blue/assets/img/flags/de.png" alt="" height="16"> German
+							</a>
+						</div>
+					</li> --}}
+					<!-- /Flag -->
+				
+					<!-- Notifications -->
+					<li class="nav-item dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fa fa-bell-o"></i> <span class="badge badge-pill">3</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Notifications</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-02.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+													<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-03.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+													<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-06.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+													<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-17.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+													<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/activities.html">
+											<div class="media">
+												<span class="avatar">
+													<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-13.jpg">
+												</span>
+												<div class="media-body">
+													<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+													<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="https://dreamguys.co.in/smarthr/blue/activities.html">View all Notifications</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Notifications -->
+					
+					<!-- Message Notifications -->
+					<li class="nav-item dropdown">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<i class="fa fa-comment-o"></i> <span class="badge badge-pill">8</span>
+						</a>
+						<div class="dropdown-menu notifications">
+							<div class="topnav-dropdown-header">
+								<span class="notification-title">Messages</span>
+								<a href="javascript:void(0)" class="clear-noti"> Clear All </a>
+							</div>
+							<div class="noti-content">
+								<ul class="notification-list">
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-09.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">Richard Miles </span>
+													<span class="message-time">12:28 AM</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-02.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">John Doe</span>
+													<span class="message-time">6 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-03.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author"> Tarah Shropshire </span>
+													<span class="message-time">5 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-05.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author">Mike Litorus</span>
+													<span class="message-time">3 Mar</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li class="notification-message">
+										<a href="https://dreamguys.co.in/smarthr/blue/chat.html">
+											<div class="list-item">
+												<div class="list-left">
+													<span class="avatar">
+														<img alt="" src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-08.jpg">
+													</span>
+												</div>
+												<div class="list-body">
+													<span class="message-author"> Catherine Manseau </span>
+													<span class="message-time">27 Feb</span>
+													<div class="clearfix"></div>
+													<span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="topnav-dropdown-footer">
+								<a href="https://dreamguys.co.in/smarthr/blue/chat.html">View all Messages</a>
+							</div>
+						</div>
+					</li>
+					<!-- /Message Notifications -->
 
+					<li class="nav-item dropdown has-arrow main-drop">
+						<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+							<span class="user-img"><img src="https://dreamguys.co.in/smarthr/blue/assets/img/profiles/avatar-21.jpg" alt="">
+							<span class="status online"></span></span>
+							<span>Kimsros</span>
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/profile.html">My Profile</a>
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/settings.html">Settings</a>
+							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/login.html">Logout</a>
+						</div>
+					</li>
+				</ul>
+				<!-- /Header Menu -->
+				
+				<!-- Mobile Menu -->
+				<div class="dropdown mobile-user-menu">
+					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+					<div class="dropdown-menu dropdown-menu-right">
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/profile.html">My Profile</a>
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/settings.html">Settings</a>
+						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/login.html">Logout</a>
+					</div>
+				</div>
+				<!-- /Mobile Menu -->
+				
+            </div>
+			<!-- /Header -->
+			
+			<!-- Sidebar -->
+            <div class="sidebar" id="sidebar">
+                <div class="sidebar-inner slimscroll">
+					<div id="sidebar-menu" class="sidebar-menu">
+						<ul>
+							<li class="active">
+								<a href="/dashboard" class="active"><i class="fa fa-dashboard"></i> <span> Dashboard</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-cube"></i> <span> Apps</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="#">Chat</a></li>
+									<li class="submenu">
+										<a href="#"><span> Calls</span> <span class="menu-arrow"></span></a>
+										<ul style="display: none;">
+											<li><a href="#">Voice Call</a></li>
+											<li><a href="#">Video Call</a></li>
+											<li><a href="#">Outgoing Call</a></li>
+											<li><a href="#">Incoming Call</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Calendar</a></li>
+									<li><a href="#">Contacts</a></li>
+									<li><a href="#">Email</a></li>
+									<li><a href="#">File Manager</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#" class="noti-dot"><i class="fa fa-user"></i> <span> Employees</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="/employee">Employee</a></li>
+									<li><a href="/holiday">Holidays</a></li>
+									<li><a href="/attendance">Attendance<span class="badge badge-pill bg-primary float-right">1</span></a></li>
+									<li><a href="/mission">Mission</a></li>
+									<li><a href="/department">Department</a></li>
+									<li><a href="/position">Position</a></li>
+									<li><a href="/overtime">Overtime</a></li>
+									<li><a href="/warning_and_punishment">Warning && Punishment</a></li>
+									<li><a href="resigned_employee">Resigned Employee</a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="#"><i class="fa fa-users"></i> <span>Clients</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-rocket"></i> <span> Projects</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="#">Projects</a></li>
+									<li><a href="#">Tasks</a></li>
+									<li><a href="#">Task Board</a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="#"><i class="fa fa-user-secret"></i> <span>Leads</span></a>
+							</li>
+							<li> 
+								<a href="#"><i class="fa fa-ticket"></i> <span>Tickets</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-files-o"></i> <span> Accounts </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="#">Estimates</a></li>
+									<li><a href="">Invoices</a></li>
+									<li><a href="">Payments</a></li>
+									<li><a href="">Expenses</a></li>
+									<li><a href="">Provident Fund</a></li>
+									<li><a href="">Taxes</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-money"></i> <span> Payroll </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Employee Salary </a></li>
+									<li><a href=""> Payslip </a></li>
+									<li><a href=""> Payroll Items </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-file-pdf-o"></i> <span>Policies</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-pie-chart"></i> <span> Reports </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Expense Report </a></li>
+									<li><a href=""> Invoice Report </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-graduation-cap"></i> <span> Performance </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Performance Indicator </a></li>
+									<li><a href=""> Performance Review </a></li>
+									<li><a href=""> Performance Appraisal </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-crosshairs"></i> <span> Goals </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Goal List </a></li>
+									<li><a href=""> Goal Type </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-edit"></i> <span> Training </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Training List </a></li>
+									<li><a href=""> Trainers</a></li>
+									<li><a href=""> Training Type </a></li>
+								</ul>
+							</li>
+							<li><a href=""><i class="fa fa-bullhorn"></i> <span>Promotion</span></a></li>
+							<li><a href=""><i class="fa fa-external-link-square"></i> <span>Resignation</span></a></li>
+							<li><a href=""><i class="fa fa-times-circle"></i> <span>Termination</span></a></li>
+							<li> 
+								<a href=""><i class="fa fa-object-ungroup"></i> <span>Assets</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-briefcase"></i> <span> Jobs </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Manage Jobs </a></li>
+									<li><a href=""> Applied Candidates </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-question"></i> <span>Knowledgebase</span></a>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-bell"></i> <span>Activities</span></a>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-user-plus"></i> <span>Users</span></a>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-cog"></i> <span>Settings</span></a>
+							</li>
+							
+							<li class="submenu">
+								<a href="#"><i class="fa fa-user"></i> <span> Profile </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Employee Profile </a></li>
+									<li><a href=""> Client Profile </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-key"></i> <span> Authentication </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Login </a></li>
+									<li><a href=""> Register </a></li>
+									<li><a href=""> Forgot Password </a></li>
+									<li><a href=""> OTP </a></li>
+									<li><a href=""> Lock Screen </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-exclamation-triangle"></i> <span> Error Pages </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="">404 Error </a></li>
+									<li><a href="">500 Error </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-hand-o-up"></i> <span> Subscriptions </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Subscriptions (Admin) </a></li>
+									<li><a href=""> Subscriptions (Company) </a></li>
+									<li><a href=""> Subscribed Companies</a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-columns"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href=""> Search </a></li>
+									<li><a href=""> FAQ </a></li>
+									<li><a href=""> Terms </a></li>
+									<li><a href=""> Privacy Policy </a></li>
+									<li><a href=""> Blank Page </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href=""><i class="fa fa-puzzle-piece"></i> <span>Components</span></a>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-object-group"></i> <span> Forms </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="">Basic Inputs </a></li>
+									<li><a href="">Input Groups </a></li>
+									<li><a href="">Horizontal Form </a></li>
+									<li><a href=""> Vertical Form </a></li>
+									<li><a href=""> Form Mask </a></li>
+									<li><a href=""> Form Validation </a></li>
+								</ul>
+							</li>
+							<li class="submenu">
+								<a href="#"><i class="fa fa-table"></i> <span> Tables </span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li><a href="">Basic Tables </a></li>
+									<li><a href="">Data Table </a></li>
+								</ul>
+							</li>
+							<li> 
+								<a href="#"><i class="fa fa-file-text"></i> <span>Documentation</span></a>
+							</li>
+							<li> 
+								<a href="javascript:void(0);"><i class="fa fa-info"></i> <span>Change Log</span> <span class="badge badge-primary ml-auto">v3.4</span></a>
+							</li>
+							<li class="submenu">
+								<a href="javascript:void(0);"><i class="fa fa-share-alt"></i> <span>Multi Level</span> <span class="menu-arrow"></span></a>
+								<ul style="display: none;">
+									<li class="submenu">
+										<a href="javascript:void(0);"> <span>Level 1</span> <span class="menu-arrow"></span></a>
+										<ul style="display: none;">
+											<li><a href="javascript:void(0);"><span>Level 2</span></a></li>
+											<li class="submenu">
+												<a href="javascript:void(0);"> <span> Level 2</span> <span class="menu-arrow"></span></a>
+												<ul style="display: none;">
+													<li><a href="javascript:void(0);">Level 3</a></li>
+													<li><a href="javascript:void(0);">Level 3</a></li>
+												</ul>
+											</li>
+											<li><a href="javascript:void(0);"> <span>Level 2</span></a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0);"> <span>Level 1</span></a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+                </div>
+            </div>
+			<!-- /Sidebar -->
+			
+			<!-- Page Wrapper -->
+            <div class="page-wrapper">
+			
+				@yield('content')
 
-<meta name="robots" content="noindex">
-<body>
-    
-	<!-- Demo bar start -->
-  <div id="w3lDemoBar" class="w3l-demo-bar">
-  <div class="w3l-template-options">
-    
-    
-  </div>
-</div>
+            </div>
+			<!-- /Page Wrapper -->
+			
+        </div>
+		<!-- /Main Wrapper -->
+		
+		<!-- jQuery -->
+        <script src="asset/template/js/jquery-3.2.1.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+        <script src="asset/template/js/popper.min.js"></script>
+        <script src="asset/template/js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll JS -->
+		<script src="asset/template/js/jquery.slimscroll.min.js"></script>
+		
+		<!-- Chart JS -->
+		<script src="asset/template/js/morris.min.js"></script>
+		<script src="asset/template/js/raphael.min.js"></script>
+		<script src="asset/template/js/chart.js"></script>
+		
+		<!-- Custom JS -->
+		<script src="asset/template/js/app.js"></script>
+		
+    </body>
 
-<section id="container">
-<!--header start-->
-<header class="header fixed-top clearfix">
-<!--logo start-->
-<div class="brand">
-    <a href="index.html" class="logo">
-        HR-System
-    </a>
-    <div class="sidebar-toggle-box">
-        <div class="fa fa-bars"></div>
-    </div>
-</div>
-<!--logo end-->
-<div class="top-nav clearfix">
-    <!--search & user info start-->
-    <ul class="nav pull-right top-menu">
-        <!-- user login dropdown start-->
-        <li class="dropdown">
-            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                <img alt="" src="asset/images/2.png">
-                <span class="username">John Doe</span>
-                <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>Profile</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i> Settings</a></li>
-                <li><a href="login.html"><i class="fa fa-key"></i> Log Out</a></li>
-            </ul>
-        </li>
-        <!-- user login dropdown end -->
-       
-    </ul>
-    <!--search & user info end-->
-</div>
-</header>
-<!--header end-->
-<!--sidebar start-->
-<aside>
-    <div id="sidebar" class="nav-collapse">
-        <!-- sidebar menu start-->
-        <div class="leftside-navigation">
-            <ul class="sidebar-menu" id="nav-accordion">
-                <li>
-                    <a class="active" href="index.html">
-                        <i class="fa fa-dashboard"></i>
-                        <span>Dashboard</span>
-                    </a>
-                </li>
-                
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-users"></i>
-                        <span>Employees</span>
-                    </a>
-                    <ul class="sub">
-						<li><a href="#">All Employee</a></li>
-						<li><a href="#">Holiday</a></li>
-                        <li><a href="#">Attendance</a></li>
-                        <li><a href="#">Departement</a></li>
-                        <li><a href="#">Overtime</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-money"></i>
-                        <span>Payroll</span>
-                    </a>
-                    <ul class="sub">
-						<li><a href="#">Employee Salary</a></li>
-						<li><a href="#">Payslip</a></li>
-                        <li><a href="#">Payroll Items</a></li>
-                    </ul>
-                </li>
-
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-clipboard"></i>
-                        <span>Training</span>
-                    </a>
-                    <ul class="sub">
-						<li><a href="#">Training List</a></li>
-						<li><a href="#">Trainer</a></li>
-                        <li><a href="#">Training Type</a></li>
-                    </ul>
-                </li>
-
-
-                <li>
-                    <a href="fontawesome.html">
-                        <i class="fa fa-bullhorn"></i>
-                        <span>Font awesome </span>
-                    </a>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-th"></i>
-                        <span>Data Tables</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="basic_table.html">Basic Table</a></li>
-                        <li><a href="responsive_table.html">Responsive Table</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-tasks"></i>
-                        <span>Form Components</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="form_component.html">Form Elements</a></li>
-                        <li><a href="form_validation.html">Form Validation</a></li>
-						<li><a href="dropzone.html">Dropzone</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-envelope"></i>
-                        <span>Mail </span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="mail.html">Inbox</a></li>
-                        <li><a href="mail_compose.html">Compose Mail</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Charts</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="chartjs.html">Chart js</a></li>
-                        <li><a href="flot_chart.html">Flot Charts</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class=" fa fa-bar-chart-o"></i>
-                        <span>Maps</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="google_map.html">Google Map</a></li>
-                        <li><a href="vector_map.html">Vector Map</a></li>
-                    </ul>
-                </li>
-                <li class="sub-menu">
-                    <a href="javascript:;">
-                        <i class="fa fa-glass"></i>
-                        <span>Extra</span>
-                    </a>
-                    <ul class="sub">
-                        <li><a href="gallery.html">Gallery</a></li>
-						<li><a href="404.html">404 Error</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="login.html">
-                        <i class="fa fa-user"></i>
-                        <span>Login Page</span>
-                    </a>
-                </li>
-            </ul>            </div>
-        <!-- sidebar menu end-->
-    </div>
-</aside>
-<!--sidebar end-->
-<!--main content start-->
-<section id="main-content">
-	<section class="wrapper">
-		@yield('bodydata')
-    </section>	
- <!-- footer -->
-		  <div class="footer">
-			<div class="wthree-copyright">
-			  <p>© 2017 Visitors. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-			</div>
-		  </div>
-  <!-- / footer -->
-</section>
-<!--main content end-->
-</section>
-<script src="asset/js/bootstrap.js"></script>
-<script src="asset/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="asset/js/scripts.js"></script>
-<script src="asset/js/jquery.slimscroll.js"></script>
-<script src="asset/js/jquery.nicescroll.js"></script>
-<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
-<script src="asset/js/jquery.scrollTo.js"></script>
-<!-- morris JavaScript -->	
-
-<!-- calendar -->
-	<script type="text/javascript" src="asset/js/monthly.js"></script>
-	
-<!-- //calendar -->
-</body>
-
-<!-- Mirrored from demo.w3layouts.com/demos_new/template_demo/30-05-2017/visitors-demo_Free/217035454/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 08 Jun 2020 02:38:35 GMT -->
+<!-- Mirrored from dreamguys.co.in/smarthr/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Nov 2020 03:17:32 GMT -->
 </html>
