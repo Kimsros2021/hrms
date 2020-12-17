@@ -458,6 +458,7 @@
 									<li><a href="/role"> Role and Permission </a></li>
 									<li><a href="/change_password"> Change Password </a></li>
 									<li><a href="/leave_type"> Leave Type </a></li>
+									<li><a href="/module">Module</a></li>
 								</ul>
 							</li>
 							
