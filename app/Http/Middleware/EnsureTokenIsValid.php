@@ -17,7 +17,7 @@ class EnsureTokenIsValid
     {
         // if(!isset($_SESSION['employee'])){
         //     return redirect('login');
-        // }   
+        // }
         return $next($request);
     }
 }

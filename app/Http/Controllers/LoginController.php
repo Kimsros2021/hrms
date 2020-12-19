@@ -4,13 +4,20 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
+use Illuminate\Support\Facades\DB;
 
 class LoginController extends Controller
 {
     function index(){
-        $a='123';
-        echo Crypt::en($a);
-        echo "<br>";
-        echo Crypt::decrypt(Crypt::encrypt($a));
+        try {
+            $menu=DB::table('module')->where([
+                ['status','=','t'],
+                ['parent_id','=',null]
+            ])->get();
+            return view('dashboard')->with(['menu'=>$menu]);
+
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 }

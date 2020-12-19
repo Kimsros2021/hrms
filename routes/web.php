@@ -21,6 +21,7 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::get('/', function () {
         return view('login');
     });
+    Route::post('/login', 'LoginController@index');
     Route::match(['get', 'post'], '/dashboard', function () {
         return view('dashboard');
     });
@@ -54,17 +55,12 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::get('profile', function () {
         return view('profile');
     });
-    Route::get('candidate', function () {
-        return view('candidate');
-    });
+    
     Route::get('question', function () {
         return view('question');
     });
-    Route::get('module', function () {
-        return view('module.module');
-    });
     // setting
-        Route::get('role', function () {
+        Route::get('role/{id?}', function () {
             return view('setting.role');
         });
         Route::get('change_password', function () {
@@ -73,9 +69,16 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
         Route::get('leave_type', function () {
             return view('setting.leave_type');
         });
+        // Route::get('module', function () {
+        //     return view('module.module');
+        // });
+        Route::resource('module', 'Module\ModuleController');
+        Route::resource('dashboard', 'DashboardController');
+        Route::resource('candidate', 'CandidateController');
+        Route::resource('question', 'QuestionController');
     // end setting
 });
 
-Route::get('/login','LoginController@index');
+
 
 

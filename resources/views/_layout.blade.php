@@ -12,19 +12,20 @@
         <title>HRMS</title>
 		
 		<!-- Favicon -->
-        <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/logo.png')}}">
 		
 		<!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="asset/template/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{asset('asset/template/css/bootstrap.min.css')}}">
 		
 		<!-- Fontawesome CSS -->
-        <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{asset('asset/font-awesome-4.7.0/css/font-awesome.min.css')}}">
 		
 		<!-- Chart CSS -->
-		<link rel="stylesheet" href="asset/template/css/morris.css">
+		<link rel="stylesheet" href="{{asset('asset/template/css/morris.css')}}">
 		
 		<!-- Main CSS -->
-        <link rel="stylesheet" href="asset/template/css/style.css">
+		<link rel="stylesheet" href="{{asset('asset/template/css/style.css')}}">
+	
 		
     </head>
 	
@@ -38,7 +39,7 @@
 				<!-- Logo -->
                 <div class="header-left shadow">
                     <a href="https://turbotech.com" class="logo">
-						<img src="img/logo.png" width="40" height="40" alt="">
+						<img src="{{asset('img/logo.png')}}" width="40" height="40" alt="">
 					</a>
                 </div>
 				<!-- /Logo -->
@@ -309,7 +310,26 @@
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
-							<li class="active">
+							@foreach ($menu['menu'] as $mnu)
+								@if (count($menu['sub_menu'][$mnu->name]))
+								 	<li class="submenu">
+										<a href="#">{!! $mnu->icon !!} <span>{{$mnu->name}}</span> <span class="menu-arrow"></span></a>
+										<ul style="display: none;">
+									 		@foreach ($menu['sub_menu'][$mnu->name] as $sub_menu)
+												<li><a href="{{$sub_menu->route}}">{{$sub_menu->name}}</a></li>
+											@endforeach
+									 	</ul>
+									</li>
+									 
+								@else
+									 <li>
+										<a href="{{$mnu->route}}" class="active">{!! $mnu->icon !!} <span>{{$mnu->name}}</span></a>
+									</li>
+								@endif
+							@endforeach
+
+
+							{{-- <li class="active">
 								<a href="/dashboard" class="active"><i class="fa fa-dashboard"></i> <span> Dashboard</span></a>
 							</li>
 							<li class="submenu">
@@ -552,7 +572,7 @@
 										<a href="javascript:void(0);"> <span>Level 1</span></a>
 									</li>
 								</ul>
-							</li>
+							</li> --}}
 						</ul>
 					</div>
                 </div>
@@ -571,22 +591,22 @@
 		<!-- /Main Wrapper -->
 		
 		<!-- jQuery -->
-        <script src="asset/template/js/jquery-3.2.1.min.js"></script>
+        <script src="{{asset('asset/template/js/jquery-3.2.1.min.js')}}"></script>
 		
 		<!-- Bootstrap Core JS -->
-        <script src="asset/template/js/popper.min.js"></script>
-        <script src="asset/template/js/bootstrap.min.js"></script>
+        <script src="{{asset('asset/template/js/popper.min.js')}}"></script>
+        <script src="{{asset('asset/template/js/bootstrap.min.js')}}"></script>
 		
 		<!-- Slimscroll JS -->
-		<script src="asset/template/js/jquery.slimscroll.min.js"></script>
+		<script src="{{asset('asset/template/js/jquery.slimscroll.min.js')}}"></script>
 		
 		<!-- Chart JS -->
-		<script src="asset/template/js/morris.min.js"></script>
-		<script src="asset/template/js/raphael.min.js"></script>
-		<script src="asset/template/js/chart.js"></script>
+		<script src="{{asset('asset/template/js/morris.min.js')}}"></script>
+		<script src="{{asset('asset/template/js/raphael.min.js')}}"></script>
+		<script src="{{asset('asset/template/js/chart.js')}}"></script>
 		
 		<!-- Custom JS -->
-		<script src="asset/template/js/app.js"></script>
+		<script src="{{asset('asset/template/js/app.js')}}"></script>
 		
     </body>
 

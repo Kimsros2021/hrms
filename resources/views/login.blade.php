@@ -43,7 +43,7 @@
                             </div>
 							
 							<!-- Account Form -->
-							<form action="dashboard" method="POST">
+							<form action="{{url('dashboard')}}" method="POST">
 								@csrf
 								<div class="form-group">
 									<label>Email Address</label>

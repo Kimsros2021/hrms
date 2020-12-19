@@ -16,9 +16,11 @@ class CreateModule extends Migration
         Schema::create('module', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('icon');
-            $table->integer('parent_id');
+            $table->string('icon')->nullable();
+            $table->integer('parent_id')->nullable();
+            $table->string('route')->nullable();
             $table->boolean('status');
+            $table->smallInteger('order')->nullable();
             $table->timestamp('create_at');
             $table->integer('create_by');
         });
