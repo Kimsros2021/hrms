@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\menuModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
 
 class DashboardController extends Controller
 {
@@ -13,9 +14,10 @@ class DashboardController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $menu=menuModel::menu();
+        $route =Route::getFacadeRoot()->current()->uri();
+        $menu=menuModel::menu(4);
         return view('dashboard')->with(['menu' => $menu]);
     }
 
@@ -27,6 +29,7 @@ class DashboardController extends Controller
     public function create()
     {
         //
+        echo 'create';
     }
 
     /**
@@ -38,6 +41,9 @@ class DashboardController extends Controller
     public function store(Request $request)
     {
         //
+        $route = Route::getFacadeRoot()->current()->uri();
+        $menu = menuModel::menu(4);
+        return view('dashboard')->with(['menu' => $menu]);
     }
 
     /**
@@ -48,7 +54,8 @@ class DashboardController extends Controller
      */
     public function show($id)
     {
-        //
+        //\
+        echo 'show';
     }
 
     /**
@@ -60,6 +67,7 @@ class DashboardController extends Controller
     public function edit($id)
     {
         //
+        echo 'edit';
     }
 
     /**
@@ -72,6 +80,7 @@ class DashboardController extends Controller
     public function update(Request $request, $id)
     {
         //
+        echo 'update';
     }
 
     /**
@@ -83,5 +92,6 @@ class DashboardController extends Controller
     public function destroy($id)
     {
         //
+        echo 'destroy';
     }
 }

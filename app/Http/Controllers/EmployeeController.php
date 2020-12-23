@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\menuModel;
 use Illuminate\Http\Request;
 
-class QuestionController extends Controller
+class EmployeeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,12 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
-        $menu=menuModel::menu(4);
-        return view('question')->with(['menu'=>$menu]);
+        try {
+            $menu=menuModel::menu(4);
+            return view('employee.employee')->with(['menu'=>$menu]);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 
     /**
@@ -26,7 +29,13 @@ class QuestionController extends Controller
      */
     public function create()
     {
-        //
+        try {
+            $menu = menuModel::menu(4);
+            return view('employee.add_employee')->with(['menu' => $menu]);
+        } catch (\Throwable $th) {
+            throw $th;
+        }
+        
     }
 
     /**
@@ -38,6 +47,7 @@ class QuestionController extends Controller
     public function store(Request $request)
     {
         //
+        dd($request->all());
     }
 
     /**

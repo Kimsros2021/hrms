@@ -7,19 +7,12 @@ use Illuminate\Support\Facades\DB;
 
 class menuModel extends Model
 {
-    public static function menu(){
+    public static function menu($role_id){
         try {
-            $parent = DB::table('module')->where([
-                ['status', '=', 't'],
-                ['parent_id', '=', null]
-            ])->get();
+            $parent =db::select("SELECT DISTINCT(m.*) FROM module m INNER JOIN role_access ra on m.id=ra.module_id WHERE m.status='t' and m.parent_id is NULL and ra.role_id=$role_id order by m.order");
             $sub_menu = null;
-            $i = 0;
             foreach ($parent as $nu) {
-                $sub_menu[$nu->name] = DB::table('module')->where([
-                    ['status', '=', 't'],
-                    ['parent_id', '=', $nu->id]
-                ])->get();
+                $sub_menu[$nu->name] = DB::select("SELECT DISTINCT(m.*) FROM module m RIGHT JOIN role_access ra on ra.module_id=m.id WHERE m.status='t' and m.parent_id=$nu->id order by m.order");
             }
             $menu['menu']=$parent;
             $menu['sub_menu']=$sub_menu;
@@ -27,5 +20,12 @@ class menuModel extends Model
         } catch (\Throwable $th) {
             throw $th;
         }
+    }
+    public static function role(){
+        
+    }
+
+    public static function module_id(){
+        
     }
 }

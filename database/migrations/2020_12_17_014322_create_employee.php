@@ -14,19 +14,19 @@ class CreateEmployee extends Migration
     public function up()
     {
         Schema::create('employee', function (Blueprint $table) {
-            $table->bigIncrements('id')->nullable(false);
-            $table->string('first_name_en')->nullable(false);
-            $table->string('last_name_en')->nullable(false);
-            $table->enum('gender', ['Male', 'Female'])->nullable(false);
-            $table->timestamp('date_of_birth')->nullable(false);
-            $table->timestamp('join_date')->nullable(false);
+            $table->bigIncrements('id');
+            $table->string('first_name_en');
+            $table->string('last_name_en');
+            $table->enum('gender', ['Male', 'Female']);
+            $table->timestamp('date_of_birth');
+            $table->timestamp('join_date');
             $table->string('email');
             $table->string('password');
-            $table->integer('department_id')->nullable(false);
-            $table->integer('position_id')->nullable(false);
-            $table->string('telephone')->nullable(false);
-            $table->string('office_phone')->unique();
-            $table->integer('salary')->nullable(false);
+            $table->integer('department_id');
+            $table->integer('position_id');
+            $table->string('telephone');
+            $table->string('office_phone')->nullable();
+            $table->integer('salary');
             $table->string('bank_name');
             $table->string('bank_account');
             $table->boolean('status');

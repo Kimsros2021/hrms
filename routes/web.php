@@ -25,23 +25,13 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
     Route::match(['get', 'post'], '/dashboard', function () {
         return view('dashboard');
     });
-    Route::get('employee', function () {
-        return view('employee');
-    });
+    
     Route::get('holiday', function () {
         return view('holiday');
     });
-    Route::get('attendance', function () {
-        return view('attendance');
-    });
+    
     Route::get('mission', function () {
         return view('mission');
-    });
-    Route::get('department', function () {
-        return view('department');
-    });
-    Route::get('position', function () {
-        return view('position');
     });
     Route::get('overtime', function () {
         return view('overtime');
@@ -60,9 +50,7 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
         return view('question');
     });
     // setting
-        Route::get('role/{id?}', function () {
-            return view('setting.role');
-        });
+        
         Route::get('change_password', function () {
             return view('setting.change_password');
         });
@@ -76,6 +64,12 @@ Route::middleware([EnsureTokenIsValid::class])->group(function () {
         Route::resource('dashboard', 'DashboardController');
         Route::resource('candidate', 'CandidateController');
         Route::resource('question', 'QuestionController');
+        Route::resource('role', 'RoleAndPermissionController');
+        Route::resource('employee','EmployeeController');
+        Route::resource('profile','ProfileController');
+        Route::resource('attendance','AttendanceController');
+        Route::resource('department','DepartmentController');
+        Route::resource('position','PositionController');
     // end setting
 });
 

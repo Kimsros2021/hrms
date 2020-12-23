@@ -6,7 +6,7 @@
 			<div class="modal-content">
 				<div class="modal-body">
 					<div class="form-header">
-						<h3>Delete Holiday</h3>
+						<h3>Delete Module</h3>
 						<p>Are you sure want to delete?</p>
 					</div>
 					<form action="" id="fm_delete_module" method="POST">
@@ -41,7 +41,7 @@
 				<div class="card dash-widget">
 					<div class="card-body">
 						<div class="co-md-12 text-right">
-							<a href="/module/create" class="btn add-btn"><i class="fa fa-plus"></i> Add Module</a>
+							<a href="{{url('module/create')}}" class="btn add-btn"><i class="fa fa-plus"></i> Add Module</a>
 						</div>
 						<div class="table-responsive">
 							<table class="table table-striped">

@@ -9,13 +9,13 @@
 						<div class="profile-view">
 							<div class="profile-img-wrap">
 								<div class="profile-img">
-									<a href="#"><img alt="" src="assets/img/profiles/avatar-02.jpg"></a>
+									<a href="#"><img alt="" src="{{url('img/ceo.jpg')}}"></a>
 								</div>
 							</div>
 							<div class="profile-basic">
 								<div class="row">
 									<div class="col-md-5">
-										<div class="profile-info-left">
+										<div class="profile-info-left" style="margin-left: 27px">
 											<h3 class="user-name m-t-0 mb-0">John Doe</h3>
 											<h6 class="text-muted">UI/UX Design Team</h6>
 											<small class="text-muted">Web Designer</small>
@@ -322,7 +322,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="dropdown profile-action">
-									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="material-icons">more_vert</i></a>
+									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a data-target="#edit_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 										<a data-target="#delete_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -385,7 +385,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="dropdown profile-action">
-									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="material-icons">more_vert</i></a>
+									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a data-target="#edit_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 										<a data-target="#delete_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -448,7 +448,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="dropdown profile-action">
-									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="material-icons">more_vert</i></a>
+									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a data-target="#edit_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 										<a data-target="#delete_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
@@ -511,7 +511,7 @@
 						<div class="card">
 							<div class="card-body">
 								<div class="dropdown profile-action">
-									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="material-icons">more_vert</i></a>
+									<a aria-expanded="false" data-toggle="dropdown" class="action-icon dropdown-toggle" href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
 									<div class="dropdown-menu dropdown-menu-right">
 										<a data-target="#edit_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-pencil m-r-5"></i> Edit</a>
 										<a data-target="#delete_project" data-toggle="modal" href="#" class="dropdown-item"><i class="fa fa-trash-o m-r-5"></i> Delete</a>

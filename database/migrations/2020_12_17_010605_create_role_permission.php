@@ -17,10 +17,7 @@ class CreateRolePermission extends Migration
             $table->bigIncrements('id');
             $table->integer('role_id');
             $table->integer('module_id');
-            $table->boolean('view');
-            $table->boolean('add');
-            $table->boolean('update');
-            $table->boolean('delete');
+            $table->integer('type');
             $table->integer('create_by');
             $table->timestamp('create_date');
             $table->boolean('status');

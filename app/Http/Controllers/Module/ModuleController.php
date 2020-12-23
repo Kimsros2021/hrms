@@ -19,7 +19,7 @@ class ModuleController extends Controller
     public function index()
     {
         //
-        $menu=menuModel::menu();
+        $menu=menuModel::menu(4);
         $module=DB::table('module')->get();
         return view('module.module')->with(['module'=>$module,'menu'=>$menu]);
     }
@@ -37,7 +37,7 @@ class ModuleController extends Controller
                 ['status','=','t'],
                 ['parent_id','=',null]
             ])->get();
-            $menu=menuModel::menu();
+            $menu=menuModel::menu(4);
             return view('module.add_module')->with(['parent'=>$parent,'menu'=>$menu]);
         } catch (\Throwable $th) {
             throw $th;
@@ -73,8 +73,6 @@ class ModuleController extends Controller
             ]);
             DB::commit();
             return redirect('module')->with('success','Success Insert !!');
-            // return Redirect::to("/module")->withSuccess('Success message');
-            return 'Success !!';
         } catch (\Throwable $th) {
             DB::rollBack();
             throw $th;
@@ -110,7 +108,7 @@ class ModuleController extends Controller
                 ['parent_id', '=', null]
             ])->get();
             $module=DB::table('module')->where('id','=',$id)->get();
-            $menu=menuModel::menu();
+            $menu=menuModel::menu(4);
             return view('module.edit_module')->with(['module'=>$module,'parent'=>$parent,'menu'=>$menu]);
         } catch (\Throwable $th) {
             throw $th;

@@ -15,8 +15,8 @@ class CreatePosition extends Migration
     {
         Schema::create('position', function (Blueprint $table) {
             $table->increments('id');
-            $table->char('name', 50);
-            $table->char('name_kh', 50);
+            $table->string('name');
+            $table->string('name_kh');
             $table->integer('department_id');
             $table->integer('create_by');
             $table->timestamp('create_date');

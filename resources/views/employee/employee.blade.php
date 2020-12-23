@@ -34,7 +34,7 @@
 				<div class="card dash-widget">
 					<div class="card-body">
 						<div class="co-md-12 text-right">
-							<a href="#" class="btn add-btn" data-toggle="modal" data-target="#add_holiday"><i class="fa fa-plus"></i> Add Employee</a>
+							<a href="{{url('employee/create')}}" class="btn add-btn"><i class="fa fa-plus"></i> Add Employee</a>
 						</div>
 						<div class="table-responsive">
 							<table class="table table-striped">

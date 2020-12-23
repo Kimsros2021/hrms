@@ -283,7 +283,7 @@
 							<span>Kimsros</span>
 						</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/profile.html">My Profile</a>
+							<a class="dropdown-item" href="{{url('profile')}}">My Profile</a>
 							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/settings.html">Settings</a>
 							<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/login.html">Logout</a>
 						</div>
@@ -295,7 +295,7 @@
 				<div class="dropdown mobile-user-menu">
 					<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
 					<div class="dropdown-menu dropdown-menu-right">
-						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/profile.html">My Profile</a>
+						<a class="dropdown-item" href="{{url('profile')}}">My Profile</a>
 						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/settings.html">Settings</a>
 						<a class="dropdown-item" href="https://dreamguys.co.in/smarthr/blue/login.html">Logout</a>
 					</div>
@@ -306,7 +306,7 @@
 			<!-- /Header -->
 			
 			<!-- Sidebar -->
-            <div class="sidebar" id="sidebar">
+            <div class="sidebar shadow-sm p-3 mb-5 bg-white rounded" id="sidebar">
                 <div class="sidebar-inner slimscroll">
 					<div id="sidebar-menu" class="sidebar-menu">
 						<ul>
@@ -316,14 +316,14 @@
 										<a href="#">{!! $mnu->icon !!} <span>{{$mnu->name}}</span> <span class="menu-arrow"></span></a>
 										<ul style="display: none;">
 									 		@foreach ($menu['sub_menu'][$mnu->name] as $sub_menu)
-												<li><a href="{{$sub_menu->route}}">{{$sub_menu->name}}</a></li>
+												<li><a href="{{url($sub_menu->route)}}">{{$sub_menu->name}}</a></li>
 											@endforeach
 									 	</ul>
 									</li>
 									 
 								@else
 									 <li>
-										<a href="{{$mnu->route}}" class="active">{!! $mnu->icon !!} <span>{{$mnu->name}}</span></a>
+										<a href="{{url($mnu->route)}}" class="active">{!! $mnu->icon !!} <span>{{$mnu->name}}</span></a>
 									</li>
 								@endif
 							@endforeach
@@ -607,7 +607,14 @@
 		
 		<!-- Custom JS -->
 		<script src="{{asset('asset/template/js/app.js')}}"></script>
-		
+		<script>
+			window.addEventListener("beforeunload", function (e) {
+				var confirmationMessage = "\o/";
+
+				(e || window.event).returnValue = confirmationMessage; //Gecko + IE
+				return confirmationMessage;                            //Webkit, Safari, Chrome
+			});
+		</script>
     </body>
 
 <!-- Mirrored from dreamguys.co.in/smarthr/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Nov 2020 03:17:32 GMT -->

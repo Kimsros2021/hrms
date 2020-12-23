@@ -15,7 +15,7 @@ class CandidateController extends Controller
     public function index()
     {
         //
-        $menu = menuModel::menu();
+        $menu = menuModel::menu(4);
         return view('candidate')->with(['menu' => $menu]);
     }
 

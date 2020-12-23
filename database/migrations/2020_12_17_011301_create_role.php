@@ -16,6 +16,7 @@ class CreateRole extends Migration
         Schema::create('role', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('role');
             $table->boolean('status');
             $table->integer('create_by');
             $table->timestamp('create_date');
